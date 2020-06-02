@@ -4,14 +4,14 @@ import EN from "./en.json";
 import TR from "./tr.json";
 import ES from "./es.json";
 
-const trasnlations = {
+const translations = {
   en: EN,
   tr: TR,
   es: ES,
 };
 
 
-const getTranslate = langCode => key => trasnlations[langCode][key] || key;
+const getTranslate = langCode => key => translations[langCode][key] || key;
 
 const initialState = {
   langCode: "en",
